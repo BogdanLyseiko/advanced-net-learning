@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+
+/Layered Architectures/Task 1/Task1ProjectSolution/.vs
+/.vs
+/Layered Architectures/Task 1/Task1ProjectSolution/Task1Project/obj
+/Layered Architectures/Task 1/Task1ProjectSolution/Task1Project/bin/Debug/net7.0
