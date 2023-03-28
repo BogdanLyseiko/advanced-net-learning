@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Layered Architectures/Task 2/Task2/.vs
+/Layered Architectures/Task 2/Task2/Application/bin
+/Layered Architectures/Task 2/Task2/Application/obj
+/Layered Architectures/Task 2/Task2/Domain/bin/Debug
+/Layered Architectures/Task 2/Task2/Domain/obj
+/Layered Architectures/Task 2/Task2/Infrastracture/bin
+/Layered Architectures/Task 2/Task2/Infrastracture/obj
+/Layered Architectures/Task 2/Task2/WebApi/bin
+/Layered Architectures/Task 2/Task2/WebApi/obj
