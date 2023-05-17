@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/RESTful/Task2/Task2/Task2/obj
+/RESTful/Task2/Task2/Task2/bin/Debug/net7.0
