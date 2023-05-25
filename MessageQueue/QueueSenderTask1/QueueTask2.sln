@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueReceiverTask2", "QueueReceiverTask1\QueueReceiverTask2.csproj", "{997102C1-FB85-4C2A-9E90-68933B81D838}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueTask2", "QueueTask2\QueueTask2.csproj", "{CFF3E117-0FCD-46A8-83C2-2B61A32191D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1025ACC9-E5CD-43C7-85B2-C824564FCD0E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{997102C1-FB85-4C2A-9E90-68933B81D838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{997102C1-FB85-4C2A-9E90-68933B81D838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{997102C1-FB85-4C2A-9E90-68933B81D838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{997102C1-FB85-4C2A-9E90-68933B81D838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFF3E117-0FCD-46A8-83C2-2B61A32191D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF3E117-0FCD-46A8-83C2-2B61A32191D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF3E117-0FCD-46A8-83C2-2B61A32191D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF3E117-0FCD-46A8-83C2-2B61A32191D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5DE7B63-51E5-47A1-AF05-4F843090EF54}
+	EndGlobalSection
+EndGlobal
