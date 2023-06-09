@@ -1,0 +1,138 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/Carting",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7079
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Carting",
+      "SwaggerKey": "cartings"
+    },
+    {
+      "UpstreamPathTemplate": "/api/Carting/{id}",
+      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7079
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Carting/{id}",
+      "SwaggerKey": "cartings"
+    },
+    {
+      "UpstreamPathTemplate": "/api/Catalog",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7029
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Catalog",
+      "SwaggerKey": "catalogs"
+    },
+    {
+      "UpstreamPathTemplate": "/api/Catalog",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7029
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Catalog",
+      "SwaggerKey": "catalogs",
+      "RouteClaimsRequirement": {
+        "role": "admin"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Catalog/{id}",
+      "UpstreamHttpMethod": [ "Get"],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7029
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Catalog/{id}",
+      "Key": "catalog",
+      "SwaggerKey": "catalogs"
+    },
+    {
+      "UpstreamPathTemplate": "/api/Catalog/{id}",
+      "UpstreamHttpMethod": [ "Put", "Delete" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7029
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Catalog/{id}",
+      "SwaggerKey": "catalogs",
+      "RouteClaimsRequirement": {
+        "role": "admin"
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Catalog/{id}/item",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7029
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Catalog/{id}/item",
+      "Key": "catalogItem",
+      "SwaggerKey": "catalogs"
+    }
+  ],
+  "Aggregates": [
+    {
+      "RouteKeys": [
+        "catalog",
+        "catalogItem"
+      ],
+      "UpstreamPathTemplate": "/api/aggregate/{id}",
+      "Aggregator": "CatalogItemAggregator"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7006"
+  },
+  "SwaggerEndPoints": [
+    {
+      "Key": "cartings",
+      "Config": [
+        {
+          "Name": "Cartings API",
+          "Version": "v1",
+          "Url": "https://localhost:7079/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "catalogs",
+      "Config": [
+        {
+          "Name": "Catalogs API",
+          "Version": "v1",
+          "Url": "https://localhost:7029/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}
